@@ -1,0 +1,68 @@
+@import 'fonts.scss';
+
+.page-3 {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+
+    .todos-title {
+        text-align: center;
+        color: rgb(179, 131, 226);
+        font-size: 9rem;
+        opacity: 0.4;
+        @include helvetica('Poppins-Bold');
+        padding-bottom: 1.5rem;
+    }
+
+    #todos-form {
+        max-width: 100%;
+        width: 400px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        .todos-input {
+            padding: 0.5rem 2rem;
+            display: block;
+            width: 100%;
+            font-size: 1.5rem;
+            border: none;
+
+            &::placeholder {
+                color: #b5b5b5;
+            }
+        }
+
+        .todos {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            & li {
+                padding: 0.5rem 2rem;
+                font-size: 1.5rem;
+                border-top: 1px solid #e5e5e5;
+                background-color: #fff;
+                cursor: pointer;
+
+                &.completed {
+                    text-decoration: line-through;
+                    color: #b5b5b5;
+                }
+            }
+        }
+    }
+}
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: 0.5s;
+}
+
+.todos-small {
+    margin-top: 3rem;
+    color: #ffffff9c;
+    text-align: center;
+}
+
+.rounded {
+    width: 30px;
+}

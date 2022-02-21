@@ -1,0 +1,46 @@
+@import "fonts.scss";
+.page-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    .birthday-title {
+        font-size: 4rem;
+        margin-top: -10rem;
+        font-weight: normal;
+        @include helvetica('Poppins-Bold');
+    }
+
+    .countdown-container {
+        display: flex;
+
+        .countdown-el {
+            text-align: center;
+
+            & span {
+                font-size: 1.3rem;
+            }
+
+            .big-text {
+                font-size: 6rem;
+                line-height: 1;
+                margin: 0 2rem; 
+                font-weight: bold;
+            }
+        }
+
+
+    }
+
+    .timer-small {
+        margin-top: 3rem;
+        color: #ffffff9c;
+        text-align: center;
+    }
+}
+
+
+
+

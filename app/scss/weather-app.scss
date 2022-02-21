@@ -1,0 +1,51 @@
+.page-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .wether-info {
+        color: #fff;
+        text-align: center;
+        max-width: 400px;
+        font-size: 1.5rem;
+        min-height: 323px;
+        margin-top: 1rem;
+        box-shadow: 0 4px 10px #00000073;
+        border-radius: 25px;
+        padding: 1rem 3rem;
+        opacity: 0;
+        background-image: url("../imgs/clouds.png");
+        background-size: cover;
+
+        h2 {
+            margin-top: 2rem;
+            font-size: 3rem;
+        }
+
+        img {
+            transform: scale(2);
+        }
+    }
+
+    #search {
+        border: none;
+        background-color: #fff;
+        border-radius: 25px;
+        font-family: inherit;
+        box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.2);
+        padding: 1rem;
+        width: 100%;
+        font-size: 2rem;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    small {
+        margin-bottom: 2rem;
+        color: #ffffffb5;
+        font-size: 1rem;
+    }
+}

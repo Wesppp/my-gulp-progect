@@ -1,0 +1,28 @@
+<div class="page-3">
+    <h1 class="todos-title">todos</h1>
+
+    <form action="" id="todos-form">
+
+        <input type="text" class="todos-input" placeholder="Enter your todo" autocomplete="off">
+
+        <ul class="todos" id="todos">
+
+        </ul>
+       
+    </form>
+    <small class="todos-small">Left click to toggle as complete.<br>Right click to delete<br>All your notes are saved (using localstorage)</small>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast todo-toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="imgs/warning.png" class="rounded me-2" alt="!!!">
+            <strong class="me-auto">Warning</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+          </div>
+          <div class="toast-body">
+            Fill in the input!
+          </div>
+        </div>
+    </div>
+</div>
+
