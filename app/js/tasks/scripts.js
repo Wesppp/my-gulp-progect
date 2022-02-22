@@ -3,9 +3,9 @@ sourcemaps =    require('gulp-sourcemaps'),
 gulpIf =        require('gulp-if'),
 concat =        require('gulp-concat'),
 notify =        require('gulp-notify'),
-multipipe =     require('multipipe')
+multipipe =     require('multipipe'),
 
-isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development'
+isDevelopment = process.env.NODE_ENV === 'development';
 
 module.exports = function scripts() {
     return multipipe(

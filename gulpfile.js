@@ -1,7 +1,8 @@
 const {series, watch, parallel} = require('gulp'),
 del =           require('del'),
 sync =          require('browser-sync').create()
-let isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development'
+
+let isDevelopment = process.env.NODE_ENV === 'development';
 
 const html = require('./app/js/tasks/html.js'),
       scss = require('./app/js/tasks/styles.js'),
